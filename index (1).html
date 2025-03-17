@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RepairMyBike Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Background and body styling */
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      color: #ffffff;
+    }
+    /* Glassmorphism card style */
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      max-width: 420px;
+      width: 100%;
+      padding: 25px;
+      text-align: center;
+    }
+    /* Logo styling */
+    .logo {
+      width: 100px;
+      margin: 0 auto 15px;
+      display: block;
+      border-radius: 50%;
+      border: 2px solid #ff5722;
+    }
+    /* Headings and text */
+    .card h2 {
+      margin-top: 0;
+      color: #ff5722;
+      font-size: 1.9em;
+    }
+    .card p {
+      margin: 10px 0;
+      color: #d1d1d1;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+    .card strong {
+      font-weight: 600;
+      color: #ffffff;
+    }
+    /* Featured photo */
+    .featured-photo {
+      width: 100%;
+      border-radius: 15px;
+      margin: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    /* Section styling */
+    .section {
+      margin-top: 25px;
+      text-align: left;
+    }
+    .section h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #ff5722;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .section ul li {
+      margin: 8px 0;
+      font-size: 0.9em;
+      color: #d1d1d1;
+    }
+    /* Contact buttons */
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff5722;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin: 5px;
+    }
+    .btn:hover {
+      background: #e64a19;
+      transform: translateY(-3px);
+    }
+    /* Social icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .social-icons a {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    /* Address section */
+    .address iframe {
+      border: 0;
+      border-radius: 15px;
+      width: 100%;
+      height: 200px;
+      margin-top: 10px;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+      }
+      .card h2 {
+        font-size: 1.6em;
+      }
+      .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+      }
+      .social-icons a {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Logo Section -->
+    <img src="WhatsApp Image 2025-02-20 at 18.50.13 (1).jpeg" alt="RepairMyBike Logo" class="logo" />
+
+    <h2>RepairMyBike</h2>
+    <p>Professional bike repair services at your doorstep.</p>
+    <p><strong>Your Doorstep!</strong> Professional bike repair and maintenance services at your convenience. Our expert mechanics come to you!</p>
+    
+    <!-- Engaging Photo -->
+    <img src="Screenshot from 2025-03-16 13-09-15.png" alt="Engaging Bike Repair Service" class="featured-photo" />
+    
+    <!-- Our Services Section -->
+    <div class="section">
+      <h3>Our Services</h3>
+      <ul>
+        <li><strong>Periodic Service:</strong> Regular maintenance to keep your bike in top condition</li>
+        <li><strong>Roadside Assistance:</strong> 24/7 emergency support wherever you are</li>
+        <li><strong>Bike Insurance:</strong> Comprehensive coverage for your peace of mind</li>
+        <li><strong>Battery Replacement:</strong> Quick and reliable battery solutions</li>
+        <li><strong>Tyre Care:</strong> Expert tire maintenance and replacement</li>
+        <li><strong>Engine Repair:</strong> Complete engine diagnostics and repair</li>
+        <li><strong>Accidental Repair:</strong> Specialized repair for accident damage</li>
+      </ul>
+    </div>
+    
+    <!-- How It Works Section -->
+    <div class="section">
+      <h3>How It Works</h3>
+      <ul>
+        <li><strong>Select Your Location:</strong> Choose your preferred service location</li>
+        <li><strong>Book a Mechanic:</strong> Schedule a convenient time for service</li>
+        <li><strong>Live Tracking:</strong> Track your mechanic in real-time</li>
+        <li><strong>Service Warranty:</strong> Get warranty on all repairs</li>
+      </ul>
+    </div>
+    
+    <!-- Workshops Section -->
+    <div class="section">
+      <h3>Our Workshops</h3>
+      <ul>
+        <li><strong>Basic Bike Maintenance:</strong> Learn essential bike care techniques</li>
+        <li><strong>Advanced Repair Techniques:</strong> Master complex repairs and diagnostics</li>
+        <li><strong>Safety & First Aid Workshop:</strong> Ensure your safety on the road</li>
+        <li><strong>DIY Repair Workshop:</strong> Hands-on session to fix common issues yourself</li>
+      </ul>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="section">
+      <h3>Contact Us</h3>
+      <div class="contact-buttons">
+        <a href="tel:8168121711" class="btn">Call Us</a>
+        <a href="mailto:info@repairmybike.in" class="btn">Email Us</a>
+        <a href="https://repairmybike.in" class="btn">Visit Website</a>
+        <a href="wa.me/918168121711" class="btn">WhatsApp Support</a>
+      </div>
+    </div>
+    
+    <!-- Social Section with SVG logos -->
+    <div class="section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/18Z2yQkjrT/?mibextid=wwXIfr" title="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2">
+            <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.337v21.326C0 23.4.6 24 1.337 24h11.49v-9.294H9.691v-3.622h3.136V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.663V1.337C24 .6 23.4 0 22.675 0z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/repair_my_bike/?__pwa=1#" title="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E1306C">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.34 3.608 1.315.975.975 1.253 2.242 1.315 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.34 2.633-1.315 3.608-.975.975-2.242 1.253-3.608 1.315-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.34-3.608-1.315-.975-.975-1.253-2.242-1.315-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.34-2.633 1.315-3.608.975-.975 2.242-1.253 3.608-1.315 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.332.013 7.052.072 5.775.131 4.665.414 3.76 1.32 2.854 2.226 2.571 3.336 2.512 4.613 2.453 5.893 2.44 6.302 2.44 9.561s.013 3.668.072 4.947c.059 1.277.342 2.387 1.248 3.293.906.906 2.016 1.189 3.293 1.248 1.279.059 1.688.072 4.947.072s3.668-.013 4.947-.072c1.277-.059 2.387-.342 3.293-1.248.906-.906 1.189-2.016 1.248-3.293.059-1.279.072-1.688.072-4.947s-.013-3.668-.072-4.947c-.059-1.277-.342-2.387-1.248-3.293C19.387.414 18.277.131 17 .072 15.721.013 15.312 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.882 0 1.44 1.44 0 0 1 2.882 0z"/>
+          </svg>
+        </a>
+        <a href="http://www.youtube.com/@repairmybike" title="Youtube">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2">
+            <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.717 0-4.92 2.204-4.92 4.917 0 .39.045.765.127 1.124-4.087-.205-7.72-2.166-10.148-5.144-.423.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.416-1.68 1.319-3.809 2.105-6.102 2.105-.395 0-.779-.023-1.17-.067 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14-7.496 14-13.986 0-.21 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Address Section -->
+    <div class="section address">
+      <h3>Our Address</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28130.16988443182!2d76.59937568203244!3d28.19907077998764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d50719ae37551%3A0xe4c45afc4faedcee!2sRewari%2C%20Haryana%20123401!5e0!3m2!1sen!2sin!4v1742111876303!5m2!1sen!2sin" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+    
+  </div>
+</body>
+</html>
+
+
+
